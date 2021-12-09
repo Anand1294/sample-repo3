@@ -1,5 +1,3 @@
-cat README.md
-
 pipeline {
     agent any
     stages {
