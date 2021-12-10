@@ -9,7 +9,7 @@ pipeline {
         stage ('Shell Script') {
             steps {
                 script {
-                    sh "echo 'Hello, World'"
+                    sh "cat README.md"
                 }
             }
         }
