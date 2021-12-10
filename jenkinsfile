@@ -5,6 +5,13 @@ pipeline {
             steps {
                 git url: "https://github.com/Anand1294/sample-repo3", branch: "main"
             }
-        }        
+        }
+        stage ('Shell Script') {
+            steps {
+                script {
+                    sh "echo 'Hello, World'"
+                }
+            }
+        }
     }
 }
