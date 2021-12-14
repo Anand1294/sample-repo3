@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage ('Git clone') {
             steps {
-                git url: "git@github.com/Anand1294/sample-repo3", branch: "main", credentialsId: "git"
+                git url: "git@github.com:Anand1294/sample-repo3", branch: "main", credentialsId: "git"
             }
         }
         stage ('Shell Script') {
