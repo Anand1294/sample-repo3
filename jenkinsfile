@@ -1,4 +1,4 @@
-pipeline {
+/*pipeline {
     agent any
     stages {
         stage ('Git clone') {
@@ -14,4 +14,16 @@ pipeline {
             }
         }
     }
+}
+*/
+
+pipeline {
+  agent any
+  stages {
+    stage ('Archive artifacts') {
+      steps {
+        archiveArtifacts artifacts: 'output.txt', fingerprint: true
+      }
+    }
+  }
 }
