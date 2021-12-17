@@ -17,7 +17,7 @@
 }
 */
 
-pipeline {
+/*pipeline {
   agent any
   stages {
     stage ('Archive artifacts') {
@@ -27,3 +27,8 @@ pipeline {
     }
   }
 }
+*/
+
+@Library("AnandSharedLib")
+import com.hexaware.sharedlib.SharedLibrary
+new SharedLibrary(steps).startBuild()
