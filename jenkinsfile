@@ -22,7 +22,7 @@ pipeline {
   stages {
     stage ('Archive artifacts') {
       steps {
-        archiveArtifacts artifacts: 'output.txt', fingerprint: true
+        archiveArtifacts artifacts: 'result.txt', fingerprint: true
       }
     }
   }
